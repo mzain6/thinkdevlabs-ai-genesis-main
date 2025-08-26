@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { 
   Building2, 
   ShoppingCart, 
@@ -382,6 +383,8 @@ const Industries = () => {
                 Let's discuss your unique requirements and challenges.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact">
+
                 <Button 
                   size="lg" 
                   className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
@@ -389,6 +392,7 @@ const Industries = () => {
                 >
                   Discuss Custom Solution
                 </Button>
+                </Link>
                 <Button 
                   size="lg" 
                   variant="outline" 
