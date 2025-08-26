@@ -437,7 +437,7 @@ const Solutions = () => {
                 <Button 
                   size="lg" 
                   className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
-                  onClick={() => window.location.href = "/contact"}
+                  
                 >
                   Start Your AI Journey
                 </Button>
