@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap, Brain } from "lucide-react";
 import heroImage from "@/assets/hero-ai-brain.jpg";
-
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-16 pb-8 sm:pb-16 overflow-hidden">
@@ -48,14 +48,18 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
+             <Link to="/contact">
+
               <Button
+
                 size="lg"
                 className="bg-gradient-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.location.href = "/contact"}
+               
               >
                 Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </Link>
               <Button
                 size="lg"
                 variant="outline"
