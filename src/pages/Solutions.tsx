@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { 
   Brain,
   Bot,
@@ -431,6 +432,8 @@ const Solutions = () => {
                 Let's discuss how our AI solutions can address your specific challenges and opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact">
+
                 <Button 
                   size="lg" 
                   className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
@@ -438,6 +441,7 @@ const Solutions = () => {
                 >
                   Start Your AI Journey
                 </Button>
+                </Link>
                 <Button 
                   size="lg" 
                   variant="outline" 

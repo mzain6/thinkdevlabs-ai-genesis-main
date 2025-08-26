@@ -66,7 +66,7 @@ const HeroSection = () => {
                 className="border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
                 onClick={() => window.open('https://wa.me/923201417785', '_blank')}
               >
-                WhatsApp Us
+                WhatsApp
               </Button>
             </div>
 

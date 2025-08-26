@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Brain, Users, Target, Zap, Award, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import aboutTeamImage from "@/assets/about-team.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -72,13 +73,14 @@ const About = () => {
                   that empower businesses to thrive in the digital age.
                 </p>
               </div>
-
+<Link to="/contact">
               <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300 group"
-               onClick={() => window.location.href = "/contact"}>
+          >
                 
                 Get Started with Us
                 <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
             </div>
 
             <div 
