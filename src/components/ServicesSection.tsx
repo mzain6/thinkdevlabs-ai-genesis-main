@@ -1,7 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-
 import { 
   Bot, 
   MessageSquare, 
@@ -94,15 +92,13 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-             <Button
-  variant="ghost"
-  className="group-hover:text-primary group-hover:bg-primary/10 transition-all duration-200 p-0 h-auto font-semibold"
-  asChild
->
-  <Link to="/contact">
-    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-  </Link>
-</Button>
+                <Button 
+                  variant="ghost" 
+                  className="group-hover:text-primary group-hover:bg-primary/10 transition-all duration-200 p-0 h-auto font-semibold"
+                >
+                 
+                  
+                </Button>
               </CardContent>
             </Card>
           ))}

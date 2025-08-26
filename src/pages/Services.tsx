@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { 
   Bot, 
   MessageSquare, 
@@ -231,7 +232,8 @@ const Services = () => {
                       ))}
                     </ul>
                   </div>
-                  
+                  <Link to="/contact">
+
                   <Button 
                     className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300 group"
                     onClick={() => window.location.href = "/contact"}
@@ -239,6 +241,7 @@ const Services = () => {
                     Get Started
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

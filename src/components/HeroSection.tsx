@@ -48,12 +48,12 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-             <Link to="/contact">
+             <Link to="/contact" className="">
 
               <Button
 
                 size="lg"
-                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 w-full sm:w-auto px-4 py-2 "
                
               >
                 Contact Us
